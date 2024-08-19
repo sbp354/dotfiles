@@ -43,8 +43,8 @@ esac
 # Installing on linux with apt
 if [ $machine == "Linux" ]; then
     DOT_DIR=$(dirname $(realpath $0))
-    [ $zsh == true ] && sudo apt-get install zsh
-    [ $tmux == true ] && sudo apt-get install tmux
+    [ $zsh == true ] && apt-get install zsh
+    [ $tmux == true ] && apt-get install tmux
 
 # Installing on mac with homebrew
 elif [ $machine == "Mac" ]; then
